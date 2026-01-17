@@ -1,6 +1,5 @@
-torch>2.1.0
-transformers>=4.36.0
+fastapi
+uvicorn
 sentence-transformers
-FlagEmbedding
-numpy
-onnxruntime
+pydantic
+torch
