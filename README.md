@@ -17,7 +17,8 @@ The application follows a microservices pattern, fully containerized with Docker
 
 ```mermaid
 graph LR
-    A[User (Streamlit UI)] -- |Query + Docs| --> B(FastAPI Backend)
-    B -- |Inference| --> C{Transformer Model}
-    C -- |Relevance Scores| --> B
-    B -- |Ranked Results| --> A
+    A[User (Streamlit UI)] -->|Query + Docs| B(FastAPI Backend)
+    B -->|Inference| C{Transformer Model}
+    C -->|Relevance Scores| B
+    B -->|Ranked Results| A
+```
